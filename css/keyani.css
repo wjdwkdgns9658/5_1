@@ -1,0 +1,32 @@
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+body .dot {
+  width: 0;
+  height: 0;
+  background-color: aqua;
+  animation-name: circleani;
+  animation-duration: 3s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+@keyframes circleani {
+  0% {
+    width: 0;
+    height: 0;
+    background-color: salmon;
+  }
+  50% {
+    background-color: orangered;
+  }
+  100% {
+    width: 100%;
+    height: 100vh;
+    background-color: red;
+  }
+}
